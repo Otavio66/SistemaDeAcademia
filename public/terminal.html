@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal de Entrada e Saída</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="index.html">Academia</a></h1>
+    </header>
+    <div form id="form">
+        <div class="container">
+            <h2>Registrar Entrada ou Saída</h2>
+            <label for="cpfAluno">CPF do Aluno:</label>
+            <input type="text" id="cpfAluno" placeholder="Digite o CPF do aluno" maxlength="11" required>
+            <br><br>
+
+            <!-- Botão para Registrar a Entrada -->
+            <button id="registrarEntrada" onclick="registrarEntrada()">Registrar Entrada</button>
+            <br><br>
+
+            <!-- Botão para Registrar a Saída -->
+            <button id="registrarSaida" onclick="registrarSaida()">Registrar Saída</button>
+            <br><br>
+
+            <!-- Mensagem de status -->
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Academia Inc. - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Link para o script JS externo -->
+    <script src="terminal_de_entrada_saida.js"></script>
+</body>
+</html>
+

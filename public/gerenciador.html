@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1><a href="index.html">Academia</a></h1>
+        </div>
+        
+        <!-- Formulário para gerar relatório -->
+        <div class="container" id="container">
+            <h1>Sistema gerencial da academia</h1>
+    
+            <div>
+                <button onclick="mostrarHorasTotais()">Total de horas de treinamento</button>
+                <button onclick="mostrarHorasUltimaSemana()">Total de horas na última semana</button>
+                <button onclick="relatorioClassificacao()">Classificação de Alunos na última semana</button>
+            </div>
+        
+            <div id="table"></div>
+        </div>
+
+        <!-- Formulário para deletar aluno -->
+        <form id="deleteForm">
+            <div class="container" id="container">
+                <label for="cpfDelete">CPF do aluno a ser deletado:</label>
+                <input type="text" id="cpfDelete" placeholder="Digite o CPF do aluno" required>
+                <button type="submit">Deletar Aluno</button>
+                <button type="button" id="deleteAll">Deletar Todos os Alunos</button>
+            </div>
+        </form>
+
+        <div id="resultado"></div> <!-- Onde os resultados do relatório serão exibidos -->
+    </main>   
+    <script src="gerenciador.js"></script>
+</body>
+</html>
